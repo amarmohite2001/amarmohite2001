@@ -1,0 +1,286 @@
+Amar Mohite - personal portfolio
+
+# HEADER
+
+Amar Mohite
+
+aria-label = Change Theme
+title = Change Theme
+
+aria-label = Toggle Menu
+title = Toggle Menu
+
+Home
+About
+Skills
+Certifications
+Experience
+Portfolio
+Blog
+Resume
+Contact
+
+
+# HERO
+
+title = Software Engineer · Cloud · AI & Agentic Systems
+
+Get in touch
+
+<ion-icon name="logo-linkedin"></ion-icon>
+LinkedIn
+
+<ion-icon name="logo-github"></ion-icon>
+GitHub
+
+Scroll
+
+
+# STATS
+
+3+
+Years of Experience
+
+4
+AWS Certifications
+
+3
+Hackathon Wins
+
+
+# ABOUT
+
+About me
+
+Full Stack Engineer - Cloud, AI & Agentic Systems
+
+Software engineer with 3+ years designing and shipping production-grade systems across the full stack - from cloud infrastructure and agentic AI pipelines to responsive frontends. I work across the entire delivery lifecycle: architecting scalable AWS environments, building LLM-powered backends, and shipping clean, data-driven UIs. Currently at University of Phoenix, where I own end-to-end delivery of AI-driven advisor tools that cut research time by 80%.
+
+Hire me
+
+Download CV
+
+
+# SKILLS
+
+My skills
+
+Technologies & Tools I Work With
+
+From cloud infrastructure and AI/LLM systems to full-stack web development - I build reliable, scalable, production-ready solutions.
+
+Languages & Frameworks
+Cloud & Tools
+
+JavaScript
+TypeScript
+Python
+React
+Next.js
+Angular
+HTML5
+CSS3
+Java
+Go
+FastAPI
+SpringBoot
+
+AWS
+Docker
+Kubernetes
+Terraform
+Git
+Kafka
+PostgreSQL
+MongoDB
+LangChain
+VS Code
+Jira
+Postman
+
+
+# CERTIFICATIONS
+
+Credentials
+
+AWS Certifications
+
+AWS Certified Solutions Architect - Associate
+https://www.credly.com/badges/95a4e0dd-3f8f-4e4e-b01d-dded44b187f8/public_url
+
+AWS Certified Cloud Practitioner
+https://www.credly.com/badges/04f5cccf-1cc2-444e-9c9f-fe9c49657c53/public_url
+
+AWS Certified Developer - Associate
+https://www.credly.com/badges/7ddbae52-1c05-401c-bc57-cc0a177d5dea/public_url
+
+AWS Certified AI Practitioner
+https://www.credly.com/badges/b41a1b7c-8182-4e31-a27e-425d0e171543/public_url
+
+
+# EXPERIENCE
+
+Experience
+
+Professional Journey
+
+Built production systems across AI, cloud, and full stack engineering with measurable business impact.
+
+Software Engineer 2 - University of Phoenix
+May 2024 - Present
+- Sole-delivered Student Academic Dashboard consolidating 6+ data sources and reducing advisor research time by 80 percent.
+- Designed and owned Knowledge Base RAG Chatbot architecture on AWS with LangGraph and hybrid retrieval, achieving 97 percent retrieval accuracy and reducing search time by 50 percent.
+- Provisioned Terraform-managed multi-account infrastructure with ECS Fargate, ALB, IAM, Aurora, and Blue/Green CI/CD with zero-downtime release flow.
+- Built Agentic Orchestration Engine and Salesforce Notes Summarizer processing 1M+ monthly comments with 99 percent accuracy and strong PII guardrails.
+- Migrated 20+ event streams to Amazon MSK and orchestrated Lambda microservices with Step Functions to improve reliability and scalability.
+
+Project Coordinator - Arizona State University
+Feb 2023 - Apr 2024
+- Directed 30+ research and outreach events across 50+ stakeholder organizations, improving cross-functional execution by 10 percent.
+- Maintained and debugged the center website stack using MySQL, .NET Core, ReactJS, and SurveyJS.
+- Improved website functionality and UX by 15 percent through iterative issue resolution and data-backed enhancements.
+
+Software Development Engineer Intern - Sairaj Telecom
+Apr 2021 - Jun 2022
+- Built an operations dashboard for accounting, service delivery, and data workflows that improved efficiency by 20 percent.
+- Contributed to modernization of frontend and backend functionality, improving usability and maintainability.
+- Supported AWS deployment using S3, EC2, CloudWatch, and RDS for reliable production operations.
+
+Systems Engineer - Safear Defense
+Jun 2020 - Mar 2021
+- Analyzed and maintained 1M+ records, improving data accuracy by 25 percent and reducing maintenance overhead by 15 percent.
+- Applied data analysis for operational decisions that improved planning precision and execution efficiency.
+- Collaborated with cross-functional teams to drive system improvements and consistent delivery outcomes.
+
+
+# WORKS
+
+My Works
+
+Selected Projects
+
+Production systems delivering measurable impact - from AI-powered advisor dashboards to cloud-native microservice pipelines.
+
+Student Academic Dashboard
+May 2024
+alt = Student Academic Dashboard screenshot
+
+Knowledge Base RAG Chatbot
+Jan 2025
+alt = Knowledge Base RAG Chatbot screenshot
+
+Agentic Orchestration Engine
+Mar 2025
+alt = Agentic Orchestration Engine screenshot
+
+Salesforce Notes Summarizer
+Nov 2024
+alt = Salesforce Notes Summarizer screenshot
+
+Event Stream Migration (MSK)
+Aug 2024
+alt = MSK Event Stream Migration screenshot
+
+Sairaj Telecom Dashboard
+Jun 2022
+alt = Sairaj Telecom Dashboard screenshot
+
+ASU Research Center Site
+Apr 2023
+alt = ASU Research Center Site screenshot
+
+Load more work
+
+
+# BLOG
+
+Blog
+
+Engineering Notes
+
+Short write-ups on cloud architecture, AI systems, and full stack engineering.
+
+AWS Certification Roadmap for Builders
+May 2026
+6 min read
+AWS Certification
+
+Designing AI Agents with Real Guardrails
+April 2026
+7 min read
+AI Agent
+
+Choosing an AI Framework Without Overbuilding
+March 2026
+5 min read
+AI Frameworks
+
+Shipping RAG Systems on AWS Bedrock
+February 2026
+6 min read
+AWS Bedrock
+
+
+# RESUME
+
+Resume
+
+View Resume
+
+View the latest resume below or download a PDF copy.
+
+Download PDF
+
+frameTitle = Amar Mohite Resume
+
+
+# CONTACT
+
+Contact
+
+Open to new opportunities - let's connect.
+
+Reach out for full-time roles, contract work, or collaborations. I'll get back to you promptly.
+
+Location:
+Tempe, AZ, United States
+
+Phone:
+602-422-4344
+
+Email:
+amarmohite200@gmail.com
+
+<ion-icon name="logo-linkedin"></ion-icon>
+LinkedIn
+
+<ion-icon name="logo-github"></ion-icon>
+GitHub
+
+Name
+placeholder = e.g. Jane Doe
+
+Email
+placeholder = e.g. jane@example.com
+
+Phone
+placeholder = Your phone number
+
+Message
+placeholder = Write message...
+
+Send
+
+
+# FOOTER
+
+Amar Mohite
+
+&copy; 2026 Amar Mohite
+
+
+# GO TO TOP
+
+title = Go to Top
+
+<ion-icon name="arrow-up"></ion-icon>
