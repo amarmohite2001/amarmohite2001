@@ -15,7 +15,7 @@
     ·
     <a href="./assets/Resume/Amar%20Gajanan_Mohite_Resume.pdf"><strong>Resume PDF</strong></a>
     ·
-    <a href="./index.html"><strong>Portfolio Site</strong></a>
+    <a href="https://amarmohite2001.github.io/amarmohite2001/"><strong>Portfolio Site</strong></a>
   </p>
 
 </div>
