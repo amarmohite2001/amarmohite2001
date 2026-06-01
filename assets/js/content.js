@@ -23,7 +23,7 @@ window.PORTFOLIO_CONTENT = {
     ctaHref: "#contact",
     scrollLabel: "Scroll",
     socials: [
-      { label: "LinkedIn", href: "https://www.linkedin.com/in/amar-mohite-9135b81a4/", icon: "logo-linkedin" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/amarmohite2001", icon: "logo-linkedin" },
       { label: "GitHub", href: "https://github.com/amarmohite2001", icon: "logo-github" }
     ]
   },
@@ -362,7 +362,7 @@ window.PORTFOLIO_CONTENT = {
       { label: "amarmohite200@gmail.com", href: "mailto:amarmohite200@gmail.com" }
     ],
     socials: [
-      { label: "LinkedIn", href: "https://www.linkedin.com/in/amar-mohite-9135b81a4/", icon: "logo-linkedin" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/amarmohite2001", icon: "logo-linkedin" },
       { label: "GitHub", href: "https://github.com/amarmohite2001", icon: "logo-github" }
     ],
     form: {
