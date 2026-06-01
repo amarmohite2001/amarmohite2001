@@ -43,9 +43,10 @@ window.PORTFOLIO_CONTENT = {
     subtitle: "My skills",
     title: "Technologies & Tools I Work With",
     text: "From cloud infrastructure and AI/LLM systems to full-stack web development — I build reliable, scalable, production-ready solutions.",
-    tabLabels: ["Languages & Frameworks", "Cloud & Tools"],
-    skillNames: ["JavaScript", "TypeScript", "Python", "React", "Next.js", "Angular", "HTML5", "CSS3", "Java", "Go", "FastAPI", "SpringBoot"],
-    toolNames: ["AWS", "Docker", "Kubernetes", "Terraform", "Git", "Kafka", "PostgreSQL", "MongoDB", "LangChain", "VS Code", "Jira", "Postman"]
+    tabLabels: ["AI & LLM", "Languages & Frameworks", "Cloud & Tools"],
+    aiNames: ["LangChain", "LangGraph", "LangSmith", "Qdrant", "AWS Bedrock", "OpenAI", "Hugging Face", "RAG", "Anthropic"],
+    skillNames: ["Python", "JavaScript", "TypeScript", "Java", "Go", "C#", "HTML5", "CSS3", "React", "Next.js", "Angular", "FastAPI", "Spring Boot", "Django", "ASP.NET", "Node.js"],
+    toolNames: ["AWS", "Docker", "Kubernetes", "Terraform", "Google Cloud", "Azure", "Git", "Apache Kafka", "PostgreSQL", "MongoDB", "Redis", "MySQL", "Helm", "Jira", "Postman", "TensorFlow"]
   },
   projects: {
     subtitle: "My Works",

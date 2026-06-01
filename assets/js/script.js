@@ -234,8 +234,12 @@ function bindPortfolioContent() {
   setText(document.querySelector(".skills .section-text"), portfolioContent.skills?.text || "");
 
   const skillTabs = document.querySelectorAll(".skills-toggle .toggle-btn");
-  setText(skillTabs[0], portfolioContent.skills?.tabLabels?.[0] || "Skills");
-  setText(skillTabs[1], portfolioContent.skills?.tabLabels?.[1] || "Tools");
+  setText(skillTabs[0], portfolioContent.skills?.tabLabels?.[0] || "AI & LLM");
+  setText(skillTabs[1], portfolioContent.skills?.tabLabels?.[1] || "Languages & Frameworks");
+  setText(skillTabs[2], portfolioContent.skills?.tabLabels?.[2] || "Cloud & Tools");
+
+  const aiTooltips = document.querySelectorAll(".ai-list .skill-card .tooltip");
+  (portfolioContent.skills?.aiNames || []).forEach((name, index) => setText(aiTooltips[index], name));
 
   const skillTooltips = document.querySelectorAll(".skills-list .skill-card .tooltip");
   (portfolioContent.skills?.skillNames || []).forEach((name, index) => setText(skillTooltips[index], name));
@@ -476,11 +480,20 @@ const navbar = document.querySelector("[data-navbar]");
 
 if (navToggleBtn && navbar) {
   navToggleBtn.addEventListener("click", function () {
-
     elemToggleFunc(navToggleBtn);
     elemToggleFunc(navbar);
     elemToggleFunc(document.body);
+  });
 
+  // Close mobile nav when any link is clicked
+  navbar.querySelectorAll(".navbar-link").forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (navbar.classList.contains("active")) {
+        elemToggleFunc(navToggleBtn);
+        elemToggleFunc(navbar);
+        elemToggleFunc(document.body);
+      }
+    });
   });
 }
 
@@ -492,15 +505,14 @@ const toggleBtnBox = document.querySelector("[data-toggle-box]");
 const toggleBtns = document.querySelectorAll("[data-toggle-btn]");
 const skillsBox = document.querySelector("[data-skills-box]");
 
-for (let i = 0; i < toggleBtns.length; i++) {
-  toggleBtns[i].addEventListener("click", function () {
-
-    elemToggleFunc(toggleBtnBox);
-    for (let i = 0; i < toggleBtns.length; i++) { elemToggleFunc(toggleBtns[i]); }
-    elemToggleFunc(skillsBox);
-
+toggleBtns.forEach(function (btn, index) {
+  btn.addEventListener("click", function () {
+    toggleBtns.forEach(function (b) { b.classList.remove("active"); });
+    btn.classList.add("active");
+    if (toggleBtnBox) toggleBtnBox.dataset.active = index;
+    if (skillsBox) skillsBox.dataset.active = index;
   });
-}
+});
 
 /**
  * dark & light theme toggle

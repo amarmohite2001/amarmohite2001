@@ -575,10 +575,10 @@ main { overflow-x: hidden; }
 .skills-toggle {
   background: var(--bg-secondary);
   position: relative;
-  width: min(100%, 420px);
+  width: min(100%, 600px);
   margin-inline: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   padding: 5px;
   border-radius: 100px;
@@ -593,15 +593,19 @@ main { overflow-x: hidden; }
   top: 5px;
   left: 5px;
   bottom: 5px;
-  width: calc(50% - 5px);
+  width: calc(33.333% - 3.34px);
   background: var(--raw-seinna);
   border-radius: 100px;
   transition: var(--transition-1);
   z-index: -1;
 }
 
-.skills-toggle.active::before {
-  left: 50%;
+.skills-toggle[data-active="1"]::before {
+  left: 33.333%;
+}
+
+.skills-toggle[data-active="2"]::before {
+  left: 66.666%;
 }
 
 .toggle-btn {
@@ -618,11 +622,12 @@ main { overflow-x: hidden; }
 
 .toggle-btn.active { color: var(--white); }
 
-.skills-box.active .skills-list,
+.skills-box .skills-list,
 .skills-box .tools-list { display: none; }
 
-.skills-box .skills-list,
-.skills-box.active .tools-list {
+.skills-box .ai-list,
+.skills-box[data-active="1"] .skills-list,
+.skills-box[data-active="2"] .tools-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -630,6 +635,9 @@ main { overflow-x: hidden; }
   gap: 15px;
   animation: fadeIn 0.5s ease-out forwards;
 }
+
+.skills-box[data-active="1"] .ai-list,
+.skills-box[data-active="2"] .ai-list { display: none; }
 
 @keyframes fadeIn {
 
@@ -653,6 +661,20 @@ main { overflow-x: hidden; }
 .skill-card:hover .tooltip {
   transform: translateY(0);
   opacity: 1;
+}
+
+.skill-card .card-icon {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.skill-card .card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 
@@ -1231,6 +1253,16 @@ textarea.input-field {
 
 
   /**
+   * CERTIFICATIONS
+   */
+
+  .certifications-content { margin-bottom: 30px; }
+
+  .cert-list { justify-content: flex-start; }
+
+
+
+  /**
    * SKILLS
    */
 
@@ -1489,6 +1521,40 @@ textarea.input-field {
   }
 
   .experience-period {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .toggle-btn {
+    font-size: 0.68rem;
+    padding: 6px 6px;
+    letter-spacing: -0.2px;
+  }
+}
+
+@media (max-width: 360px) {
+  .skills-toggle {
+    grid-template-columns: 1fr;
+    border-radius: var(--radius-12);
+  }
+
+  .skills-toggle::before {
+    width: calc(100% - 10px);
+    border-radius: var(--radius-4);
+    top: auto;
+    left: 5px;
+    bottom: auto;
+    height: calc(33.333% - 3.34px);
+  }
+
+  .skills-toggle[data-active="0"]::before { top: 5px; }
+  .skills-toggle[data-active="1"]::before { top: calc(33.333% + 1.67px); }
+  .skills-toggle[data-active="2"]::before { top: calc(66.666% + 1.67px); }
+
+  .toggle-btn {
+    padding: 8px 14px;
+    font-size: var(--fs-7);
     text-align: left;
   }
 }
