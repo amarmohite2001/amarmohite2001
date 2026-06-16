@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:gh": "GITHUB_PAGES=true next build",
+    "preview": "npx serve docs",
     "start": "next start"
   },
   "dependencies": {

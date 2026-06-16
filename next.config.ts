@@ -1,10 +1,13 @@
 import type { NextConfig } from 'next'
+import { run } from 'node:test'
+
+const isGitHubPages = process.env.GITHUB_PAGES === 'true'
 
 const nextConfig: NextConfig = {
   output: 'export',
   distDir: 'docs',
-  basePath: '/amarmohite2001',
-  assetPrefix: '/amarmohite2001',
+  basePath: isGitHubPages ? '/amarmohite2001' : '',
+  assetPrefix: isGitHubPages ? '/amarmohite2001' : '',
   images: {
     unoptimized: true,
   },
@@ -12,3 +15,7 @@ const nextConfig: NextConfig = {
 }
 
 export default nextConfig
+
+
+
+// Always run pnpm run build:gh
