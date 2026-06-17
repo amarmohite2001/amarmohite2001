@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { CONTENT, SkillItem } from '@/data/content'
+import { asset } from '@/lib/asset'
 
 function SkillCard({ skill }: { skill: SkillItem }) {
   return (
@@ -9,7 +10,7 @@ function SkillCard({ skill }: { skill: SkillItem }) {
       <div className="skill-card">
         <div className="tooltip">{skill.name}</div>
         <div className="card-icon">
-          <img src={skill.icon} alt={skill.alt} />
+          <img src={asset(skill.icon)} alt={skill.alt} />
         </div>
       </div>
     </li>

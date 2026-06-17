@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
 import { CONTENT } from '@/data/content'
+import { asset } from '@/lib/asset'
 
 const SOCIAL_ICONS: Record<string, React.ReactNode> = {
   LinkedIn: <IoLogoLinkedin />,
@@ -14,9 +15,9 @@ export default function Hero() {
     <section className="hero" id="home">
       <figure className="hero-banner">
         <picture>
-          <source srcSet={hero.bannerLg} media="(min-width: 768px)" />
-          <source srcSet={hero.bannerMd} media="(min-width: 500px)" />
-          <img src={hero.bannerSm} alt={hero.bannerAlt} className="w-100" />
+          <source srcSet={asset(hero.bannerLg)} media="(min-width: 768px)" />
+          <source srcSet={asset(hero.bannerMd)} media="(min-width: 500px)" />
+          <img src={asset(hero.bannerSm)} alt={hero.bannerAlt} className="w-100" />
         </picture>
       </figure>
 

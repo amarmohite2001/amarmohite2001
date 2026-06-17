@@ -1,4 +1,5 @@
 import { CONTENT } from '@/data/content'
+import { asset } from '@/lib/asset'
 
 export default function Certifications() {
   const { certifications } = CONTENT
@@ -19,7 +20,7 @@ export default function Certifications() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={cert.image} alt={cert.imageAlt} className="cert-badge" />
+              <img src={asset(cert.image)} alt={cert.imageAlt} className="cert-badge" />
               <p className="cert-label">
                 {cert.label}
                 <br />

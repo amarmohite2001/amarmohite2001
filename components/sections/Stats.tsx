@@ -1,5 +1,6 @@
 import { IoChevronForwardOutline } from 'react-icons/io5'
 import { CONTENT } from '@/data/content'
+import { asset } from '@/lib/asset'
 
 const STAT_ICONS = [
   '/images/stats-card_icon-1.png',
@@ -19,7 +20,7 @@ export default function Stats() {
           <li key={stat.description}>
             <a href={stat.href} className="stats-card">
               <div className="card-icon">
-                <img src={STAT_ICONS[i]} alt={STAT_ICON_ALTS[i]} />
+                <img src={asset(STAT_ICONS[i])} alt={STAT_ICON_ALTS[i]} />
               </div>
               <h2 className="h2 card-title">
                 {stat.value} <strong>{stat.description}</strong>

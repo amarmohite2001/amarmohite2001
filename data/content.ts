@@ -499,7 +499,7 @@ export const CONTENT = {
     title: 'View Resume',
     text: 'View the latest resume below or download a PDF copy.',
     buttonLabel: 'Download PDF',
-    file: '/Resume/Amar Gajanan_Mohite_Resume.pdf',
+    file: '/resume/Amar Gajanan_Mohite_Resume.pdf',
     frameTitle: 'Amar Mohite Resume',
   },
 }

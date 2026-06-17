@@ -1,4 +1,5 @@
 import { CONTENT } from '@/data/content'
+import { asset } from '@/lib/asset'
 
 export default function Projects() {
   const { projects } = CONTENT
@@ -18,7 +19,7 @@ export default function Projects() {
           <li key={card.title}>
             <a href={card.href} className="project-card">
               <figure className="card-banner">
-                <img src={card.image} className="w-100" alt={card.imageAlt} />
+                <img src={asset(card.image)} className="w-100" alt={card.imageAlt} />
               </figure>
               <div className="card-content">
                 <h3 className="h4 card-title">{card.title}</h3>

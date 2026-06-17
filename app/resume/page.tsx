@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { CONTENT } from '@/data/content'
+import { asset } from '@/lib/asset'
 
 export const metadata: Metadata = {
   title: 'Amar Mohite - Resume',
@@ -16,7 +17,7 @@ export default function ResumePage() {
           <h2 className="inner-page-title">{resume.title}</h2>
           <p className="inner-page-text">{resume.text}</p>
           <a
-            href={resume.file}
+            href={asset(resume.file)}
             className="btn btn-primary resume-download-btn"
             download
           >
@@ -27,7 +28,7 @@ export default function ResumePage() {
         <div className="resume-frame-wrap">
           <iframe
             className="resume-frame"
-            src={resume.file}
+            src={asset(resume.file)}
             title={resume.frameTitle}
           />
         </div>

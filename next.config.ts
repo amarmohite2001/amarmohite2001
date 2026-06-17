@@ -1,9 +1,11 @@
 import type { NextConfig } from 'next'
-import { run } from 'node:test'
 
 const isGitHubPages = process.env.GITHUB_PAGES === 'true'
 
 const nextConfig: NextConfig = {
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGitHubPages ? '/amarmohite2001' : '',
+  },
   output: 'export',
   distDir: 'docs',
   basePath: isGitHubPages ? '/amarmohite2001' : '',
@@ -15,7 +17,3 @@ const nextConfig: NextConfig = {
 }
 
 export default nextConfig
-
-
-
-// Always run pnpm run build:gh

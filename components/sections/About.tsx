@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { CONTENT } from '@/data/content'
+import { asset } from '@/lib/asset'
 
 export default function About() {
   const { about } = CONTENT
@@ -7,7 +8,7 @@ export default function About() {
   return (
     <section className="about" id="about">
       <figure className="about-banner">
-        <img src={about.bannerSrc} alt={about.bannerAlt} className="w-100" />
+        <img src={asset(about.bannerSrc)} alt={about.bannerAlt} className="w-100" />
       </figure>
 
       <div className="about-content section-content">
