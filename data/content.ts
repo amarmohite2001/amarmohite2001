@@ -98,7 +98,7 @@ export const CONTENT = {
     primaryButton: { label: 'Hire me', href: '/#contact' },
     secondaryButton: {
       label: 'Download CV',
-      href: '/Resume/Amar Gajanan_Mohite_Resume.pdf',
+      href: '/resume/Amar_Gajanan_Mohite_Resume.pdf',
     },
   },
   skills: {
@@ -499,7 +499,7 @@ export const CONTENT = {
     title: 'View Resume',
     text: 'View the latest resume below or download a PDF copy.',
     buttonLabel: 'Download PDF',
-    file: '/resume/Amar Gajanan_Mohite_Resume.pdf',
+    file: '/resume/Amar_Gajanan_Mohite_Resume.pdf',
     frameTitle: 'Amar Mohite Resume',
   },
 }
