@@ -1,15 +1,12 @@
 import type { NextConfig } from 'next'
 
-const isGitHubPages = process.env.GITHUB_PAGES === 'true'
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
 
 const nextConfig: NextConfig = {
-  env: {
-    NEXT_PUBLIC_BASE_PATH: isGitHubPages ? '/amarmohite2001' : '',
-  },
   output: 'export',
   distDir: 'docs',
-  basePath: isGitHubPages ? '/amarmohite2001' : '',
-  assetPrefix: isGitHubPages ? '/amarmohite2001' : '',
+  basePath,
+  assetPrefix: basePath || undefined,
   images: {
     unoptimized: true,
   },

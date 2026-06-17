@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "build:gh": "GITHUB_PAGES=true next build",
+    "build": "rm -rf .next docs && next build",
     "preview": "npx serve docs",
     "start": "next start"
   },
