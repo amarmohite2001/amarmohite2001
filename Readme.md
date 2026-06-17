@@ -13,7 +13,7 @@
   <p>
     <a href="https://github.com/amarmohite2001"><strong>GitHub Profile</strong></a>
     ·
-    <a href="./assets/Resume/Amar%20Gajanan_Mohite_Resume.pdf"><strong>Resume PDF</strong></a>
+    <a href="./public/resume/Amar_Gajanan_Mohite_Resume.pdf"><strong>Resume PDF</strong></a>
     ·
     <a href="https://amarmohite2001.github.io/amarmohite2001/"><strong>Portfolio Site</strong></a>
   </p>
@@ -117,28 +117,28 @@ Jun 2020 - Mar 2021
   <tr>
     <td align="center" width="25%">
       <a href="https://www.credly.com/badges/95a4e0dd-3f8f-4e4e-b01d-dded44b187f8/public_url" target="_blank" rel="noopener noreferrer">
-        <img src="./assets/images/awsSolutionArchitect.png" alt="AWS Certified Solutions Architect - Associate badge" width="140" />
+        <img src="./public/images/awsSolutionArchitect.png" alt="AWS Certified Solutions Architect - Associate badge" width="140" />
         <br />
         Solutions Architect
       </a>
     </td>
     <td align="center" width="25%">
       <a href="https://www.credly.com/badges/04f5cccf-1cc2-444e-9c9f-fe9c49657c53/public_url" target="_blank" rel="noopener noreferrer">
-        <img src="./assets/images/awsCloudPractitioner.png" alt="AWS Certified Cloud Practitioner badge" width="140" />
+        <img src="./public/images/awsCloudPractitioner.png" alt="AWS Certified Cloud Practitioner badge" width="140" />
         <br />
         Cloud Practitioner
       </a>
     </td>
     <td align="center" width="25%">
       <a href="https://www.credly.com/badges/7ddbae52-1c05-401c-bc57-cc0a177d5dea/public_url" target="_blank" rel="noopener noreferrer">
-        <img src="./assets/images/awsDeveloperAssociate.png" alt="AWS Certified Developer - Associate badge" width="140" />
+        <img src="./public/images/awsDeveloperAssociate.png" alt="AWS Certified Developer - Associate badge" width="140" />
         <br />
         Developer Associate
       </a>
     </td>
     <td align="center" width="25%">
       <a href="https://www.credly.com/badges/b41a1b7c-8182-4e31-a27e-425d0e171543/public_url" target="_blank" rel="noopener noreferrer">
-        <img src="./assets/images/AWSaiPractitioner.png" alt="AWS Certified AI Practitioner badge" width="140" />
+        <img src="./public/images/AWSaiPractitioner.png" alt="AWS Certified AI Practitioner badge" width="140" />
         <br />
         AI Practitioner
       </a>
