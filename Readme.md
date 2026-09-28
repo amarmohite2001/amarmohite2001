@@ -22,6 +22,8 @@
 
 <br />
 
+> Looking for the technical project docs (codebase structure, deployment, roadmap)? See [`project-docs/`](./project-docs/README.md).
+
 ## Summary
 
 I design and ship cloud-native products, AI-enabled workflows, and data-driven user experiences.
