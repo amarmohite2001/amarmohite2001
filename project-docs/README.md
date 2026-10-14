@@ -1,8 +1,8 @@
 # Documentation Index
 
 This folder is the foundation for all project documentation going forward — architecture,
-deployment strategy, and roadmap/future-planning docs. Add new documents here as the
-project grows.
+deployment strategy, roadmap/future-planning docs, specs, and AI workflow notes. Add new
+documents here as the project grows.
 
 **Naming note:** this folder is called `project-docs/`, not `docs/`, on purpose. This repo
 already has a `docs/` directory, but it is **generated build output** — `next.config.ts`
@@ -31,6 +31,8 @@ downloadable resume. Static, client-only — no backend, API routes, or database
 | Architecture | [`architecture/README.md`](./architecture/README.md) — tech stack, codebase map, content model |
 | Deployment | [`deployment/README.md`](./deployment/README.md) — GitHub Pages deployment strategy, static export config |
 | Roadmap | [`roadmap/README.md`](./roadmap/README.md) — speculative future work, nothing scheduled |
+| Specs | [`specs/README.md`](./specs/README.md) — spec-driven workflow: Jira-style stories written before non-trivial changes |
+| AI workflow | [`ai-workflow/README.md`](./ai-workflow/README.md) — how Claude is configured here, plus Cowork, cloud sessions, and Remote Control |
 
 Each topic folder gets its own `README.md` as the entry point; add more files inside the
 relevant folder (not new top-level files) as each topic grows.
@@ -38,5 +40,5 @@ relevant folder (not new top-level files) as each topic grows.
 ## Quick Links
 
 - Site content (bio, experience, projects, blog): [`data/content.ts`](../data/content.ts)
-- Contributor / agent conventions: [`AGENTS.md`](../AGENTS.md)
+- Contributor / agent conventions: [`AGENTS.md`](../AGENTS.md), with Claude-specific notes in [`CLAUDE.md`](../CLAUDE.md)
 - Personal branding / GitHub profile README: [`Readme.md`](../Readme.md)

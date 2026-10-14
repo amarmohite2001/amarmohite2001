@@ -39,6 +39,12 @@ documentation there, not at the repo root or in `docs/` (see the naming note in
 - Preserve accessibility attributes (`alt`, `aria-label`, semantic landmarks) on any
   component you touch.
 
+## Specs
+
+- Non-trivial changes start from a spec in `project-docs/specs/` (copy `_template.md`).
+  Trivial edits such as a typo in `data/content.ts` do not need one.
+- Keys are `AM-NNN`. Process and index: `project-docs/specs/README.md`.
+
 ## Content Editing Workflow
 
 1. Update content in `data/content.ts` (bio, experience, certifications, projects, blog
@@ -56,3 +62,5 @@ documentation there, not at the repo root or in `docs/` (see the naming note in
   root paths.
 - `trailingSlash: true` and `images.unoptimized: true` are required for correct static
   hosting on GitHub Pages — do not remove without re-verifying route behavior.
+- Cloud and Cowork sessions push branches. Deployment happens only when a change is merged
+  to `main`. See `project-docs/ai-workflow/claude-cowork-and-cloud.md`.
