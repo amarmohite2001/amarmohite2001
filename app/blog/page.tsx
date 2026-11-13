@@ -2,9 +2,28 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CONTENT } from '@/data/content'
 
+const title = 'Amar Mohite - Blog'
+const description = CONTENT.blog.text
+const url = `${CONTENT.site.url}/blog/`
+
 export const metadata: Metadata = {
-  title: `Amar Mohite - Blog`,
-  description: CONTENT.blog.text,
+  title,
+  description,
+  alternates: {
+    canonical: url,
+  },
+  openGraph: {
+    title,
+    description,
+    url,
+    siteName: CONTENT.brand.name,
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title,
+    description,
+  },
 }
 
 export default function BlogPage() {

@@ -2,8 +2,28 @@ import type { Metadata } from 'next'
 import { CONTENT } from '@/data/content'
 import { asset } from '@/lib/asset'
 
+const title = 'Amar Mohite - Resume'
+const description = CONTENT.resume.text
+const url = `${CONTENT.site.url}/resume/`
+
 export const metadata: Metadata = {
-  title: 'Amar Mohite - Resume',
+  title,
+  description,
+  alternates: {
+    canonical: url,
+  },
+  openGraph: {
+    title,
+    description,
+    url,
+    siteName: CONTENT.brand.name,
+    type: 'profile',
+  },
+  twitter: {
+    card: 'summary',
+    title,
+    description,
+  },
 }
 
 export default function ResumePage() {

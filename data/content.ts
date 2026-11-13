@@ -53,8 +53,10 @@ export interface SkillItem {
 
 export const CONTENT = {
   site: {
+    url: 'https://amarmohite2001.github.io/amarmohite2001',
     title: 'Amar Mohite - Software Engineer',
     description: 'Software Engineer specializing in Cloud, AI & Agentic Systems',
+    ogImage: '/images/hero-banner.PNG',
   },
   brand: {
     name: 'Amar Mohite',
