@@ -14,8 +14,31 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const post = CONTENT.blog.posts.find(p => p.slug === slug)
+  if (!post) {
+    return { title: 'Amar Mohite - Blog' }
+  }
+
+  const title = `Amar Mohite - ${post.title}`
+  const url = `${CONTENT.site.url}/blog/${post.slug}/`
+
   return {
-    title: post ? `Amar Mohite - ${post.title}` : 'Amar Mohite - Blog',
+    title,
+    description: post.excerpt,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title,
+      description: post.excerpt,
+      url,
+      siteName: CONTENT.brand.name,
+      type: 'article',
+    },
+    twitter: {
+      card: 'summary',
+      title,
+      description: post.excerpt,
+    },
   }
 }
 

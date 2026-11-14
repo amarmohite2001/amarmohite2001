@@ -39,4 +39,4 @@ and one-line fixes.
 
 | Key | Title | Status |
 | --- | --- | --- |
-| — | No specs yet | — |
+| [AM-001](./AM-001-seo-metadata-sitemap-structured-data.md) | SEO metadata, sitemap, robots, and structured data | In Review |
