@@ -1,4 +1,0 @@
-User-Agent: *
-Allow: /
-
-Sitemap: https://amarmohite2001.github.io/amarmohite2001/sitemap.xml
